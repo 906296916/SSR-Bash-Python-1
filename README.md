@@ -57,7 +57,10 @@
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/self-check.sh && bash self-check.sh
 
 ## 安装bzip2,离线安装失败解决方法 ##
+    #Debian/Ubuntu:
     apt-get install bzip2
+    #CentOS:
+    yum install bzip2
       
 ## 卸载 ##
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh && bash install.sh uninstall
