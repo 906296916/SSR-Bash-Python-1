@@ -92,3 +92,18 @@
 **Centos 安装：**
 
     wget -O http://download.oray.com/peanuthull/linux/phddns-3.0.2.x86_64.rpm && rpm -ivh phddns-3.0.2.x86_64.rpm
+**花生壳下载页面： https://hsk.oray.com/download/**
+## 花生壳管理命令 ##
+**启动：**
+    phddns start
+**停止：**
+    phddns stop
+**状态：**
+    phddns status
+**重启：**
+    phddns restart
+**重置：**
+    phddns reset
+**版本：**
+    phddns version
+    
