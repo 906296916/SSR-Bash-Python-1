@@ -59,22 +59,21 @@
 ## 安装bzip2,离线安装失败解决方法[CentOS] ##
     yum install bzip2
     
-## Centos6/7锐速 ##  
-## 先查看内核版本 ## 
+## Centos6/7锐速；先查看内核版本 ##
     uname -r
 ## 结果以 2 开头，例如 2.6.32-696.18.7.el6.x86_64。##
-## 这种输出结果说明我们的服务器为 CentOS 6 x64 系统，直接输入以下命令 ## 
+## 这种输出结果说明我们的服务器为 CentOS 6 x64 系统，直接输入以下命令 ##
     wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh && bash appex.sh install '2.6.32-642.el6.x86_64'
     
     
 ##  结果以 3 开头，例如 3.10.0-693.11.6.el7.x86_64。##
-##  这种输出结果说明我们的服务器为 CentOS 7 x64 系统，先输入以下命令 ## 
+##  这种输出结果说明我们的服务器为 CentOS 7 x64 系统，先输入以下命令 ##
     wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/uxh/shadowsocks_bash/master/rskernel.sh && bash rskernel.sh
 ##  重启后再输入以下命令 ## 
     yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh && bash appex.sh install
     
 ##  通用查看锐速命令， 装对了就有信息，没装成功或者没运行成功就没有这个文件## 
-    cat /proc/net/appex/stats 
+    cat /proc/net/appex/stats
 
 
       
