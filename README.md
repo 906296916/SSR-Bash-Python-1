@@ -61,7 +61,7 @@
     
 ## Centos6/7锐速 ##
 **先查看内核版本 安装过程中遇到提示，一路确定即可**
-##
+
     uname -r
 ## 结果以 2 开头，例如 2.6.32-696.18.7.el6.x86_64。##
 ## 这种输出结果说明我们的服务器为 CentOS 6 x64 系统，直接输入以下命令 ##
@@ -94,3 +94,10 @@
     wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && bash install.sh
 **面板管理常用命令：https://www.bt.cn/btcode.html**
 
+## 花生壳安装 ##
+**Ubuntu/Deepin**
+
+    wget -O http://download.oray.com/peanuthull/linux/phddns_3.0_x86_64.deb  && dpkg -i phddns_3.0_x86_64.deb
+**Centos**
+
+    wget -O http://download.oray.com/peanuthull/linux/phddns-3.0.2.x86_64.rpm && rpm -ivh phddns-3.0.2.x86_64.rpm
