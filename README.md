@@ -30,7 +30,7 @@
 - 允许针对不同用户限制帐号有效期，到期自动删除帐号
 
 ## 离线包安装: ##
-    wget -q https://github.com/906296916/SSR-Bash-Python-FunctionClub/raw/master/ShadowsocksrRZ.sh && bash ShadowsocksrRZ.sh
+    wget -q -N --no-check-certificate https://github.com/906296916/SSR-Bash-Python-FunctionClub/raw/master/ShadowsocksrRZ.sh && bash ShadowsocksrRZ.sh
     
 ## 安装&更新: ##
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh && bash install.sh
