@@ -1,14 +1,7 @@
-# SSR多用户管理脚本（基于官方mujson版本）
-- [x] 稳定版V1.7.2：[![Build Status](https://travis-ci.org/Readour/AR-B-P-B.svg?branch=master)](https://travis-ci.org/Readour/AR-B-P-B)  [![Code Climate](https://codeclimate.com/github/Readour/AR-B-P-B/badges/gpa.svg)](https://codeclimate.com/github/Readour/AR-B-P-B)
-
-- [x] 开发版V1.9.8：[![Build Status](https://travis-ci.org/Readour/AR-B-P-B.svg?branch=develop)](https://travis-ci.org/Readour/AR-B-P-B)
 
 ## 介绍 ##
 
 一个Shell脚本，集成SSR多用户管理，流量限制，加密更改等基本操作。是一个基于ShadowsocksR官方的mujson的辅助脚本。方便用户操作，并且支持快速构建SSR服务环境。
-
-- 请谨慎使用，出问题概不负责！！！！
-- 如果发现脚本bug，请及时发issues，非常感谢
 
 ## 系统支持 ##
 * Ubuntu 14
@@ -36,68 +29,66 @@
 - 支持IP黑名单功能，可通过端口查询，直接加入黑名单，禁止该IP访问服务器的所有服务
 - 允许针对不同用户限制帐号有效期，到期自动删除帐号
 
-不如看图:
-
-![](https://github.com/zyh001/zyh001.github.com/raw/master/images/now1.png) ![](https://github.com/zyh001/zyh001.github.com/blob/master/images/now2.png)
-
-## 脚本安全性声明 ##
-**本脚本采用Shell和Python语言编写，所有代码完全开源。不存在所谓的后台或挖矿代码，不会对您的任何信息进行上传，并在各个方面充分考虑到数据安全性。关于二维码生成过程是通过pip安装[第三方软件包](https://github.com/lincolnloop/python-qrcode)，由第三方软件在服务器本地生成，生成的二维码链接也会自动销毁，不会上传任何信息。您的IP被封，或者您服务器出现不正常的负荷增高，与脚本本身没有任何关系，请您自行做好服务器安全维护工作，例如：不要使用弱密码、不要使用默认SSH端口，等等，防止被闲人爆破。_本着人与人之间的互信原则，请确认您相信我和我的脚本，否则请不要使用，不懂请不要喷，容易伤和气！！！_**
-
-## 离线安装: ##
-## 此方法可用于网络情况不好，导致缺少文件的情况,亦可下载该脚本，用于备份 ##
+## 离线包安装: ##
     wget -q -N --no-check-certificate https://github.com/906296916/SSR-Bash-Python-FunctionClub/raw/master/ShadowsocksrRZ.sh && bash ShadowsocksrR.sh
     
-## 安装&更新 ##
+## 安装&更新: ##
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh && bash install.sh
 
-## 自检（没有卵用😝） ##
+## 自检（没有卵用😝）: ##
     wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/self-check.sh && bash self-check.sh
 
-## 安装bzip2,离线安装失败解决方法[Debian/Ubuntu] ##
+## 安装bzip2,离线安装失败解决方法[Debian/Ubuntu] : ##
     apt-get install bzip2
     
-## 安装bzip2,离线安装失败解决方法[CentOS] ##
+## 安装bzip2,离线安装失败解决方法[CentOS] : ##
     yum install bzip2
-    
+
+## 卸载: ##
+    wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh && bash install.sh uninstall
+ 
+## --------------------------------------------------------------- ## 
+
 ## Centos6/7锐速 ##
 **先查看内核版本 安装过程中遇到提示，一路确定即可**
 
     uname -r
 ## 结果以 2 开头，例如 2.6.32-696.18.7.el6.x86_64。##
-## 这种输出结果说明我们的服务器为 CentOS 6 x64 系统，直接输入以下命令 ##
+## 这种输出结果说明我们的服务器为 CentOS 6 x64 系统，直接输入以下命令: ##
     wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh && bash appex.sh install '2.6.32-642.el6.x86_64'
     
     
 ##  结果以 3 开头，例如 3.10.0-693.11.6.el7.x86_64。##
-##  这种输出结果说明我们的服务器为 CentOS 7 x64 系统，先输入以下命令 ##
+##  这种输出结果说明我们的服务器为 CentOS 7 x64 系统，先输入以下命令: ##
     wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/uxh/shadowsocks_bash/master/rskernel.sh && bash rskernel.sh
-##  重启后再输入以下命令 ##
+##  重启后再输入以下命令: ##
     yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh && bash appex.sh install
     
 ##  通用查看锐速命令， 装对了就有信息，没装成功或者没运行成功就没有这个文件 ##
     cat /proc/net/appex/stats
 
-
-      
-## 卸载 ##
-    wget -q -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/SSR-Bash-Python/master/install.sh && bash install.sh uninstall
-    
+## --------------------------------------------------------------- ## 
+        
 ## 客户端下载 ##
 常用平台：[Android](https://github.com/shadowsocksrr/shadowsocksr-latest-bin-backup/raw/master/Shadowsocksr-android-3.4.0.5.apk)、[MacOS](https://github.com/qinyuhang/ShadowsocksX-NG-R/releases/download/1.4.3-R8/ShadowsocksX-NG-R8.dmg)、[Windows](https://github.com/Readour/ShadowsocksR-Csharp/releases/download/4.7.0/ShadowsocksR-4.7.0-win.CONCISE.7z)、[Linux](https://github.com/shadowsocks/shadowsocks-qt5/releases/download/v2.9.0/Shadowsocks-Qt5-x86_64.AppImage)、[OpenWrt/LEDE](https://github.com/bettermanbao/openwrt-shadowsocksR-libev-full/releases)、[iOS](https://github.com/Readour/breakwa11.github.io/raw/master/download/Shadowrocket%202.1.14.ipa)
 
+## --------------------------------------------------------------- ## 
+
 ## 宝塔5.9安装 ##
-## Centos安装命令 ##
+## Centos安装命令： ##
     yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh
-## Ubuntu/Deepin安装命令 ##
+## Ubuntu/Deepin安装命令： ##
     wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && sudo bash install.sh
-## Debian安装命令 ##
+## Debian安装命令： ##
     wget -O install.sh http://download.bt.cn/install/install-ubuntu.sh && bash install.sh
 **面板管理常用命令：https://www.bt.cn/btcode.html**
 
+## --------------------------------------------------------------- ## 
+
 ## 花生壳安装 ##
-**Ubuntu/Deepin**
+**Ubuntu/Deepin 安装：**
 
     wget -O http://download.oray.com/peanuthull/linux/phddns_3.0_x86_64.deb  && dpkg -i phddns_3.0_x86_64.deb
-**Centos**
+**Centos 安装：**
 
     wget -O http://download.oray.com/peanuthull/linux/phddns-3.0.2.x86_64.rpm && rpm -ivh phddns-3.0.2.x86_64.rpm
